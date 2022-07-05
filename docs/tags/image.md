@@ -9,7 +9,7 @@
 * `src` 指定图片 `URL`
 * `alt` 图片说明，图片加载失败后会显示
 * `width` 宽度
-* `height` 高度
+* `height` 高度，最好指定宽高属性，避免重排和重绘，提高性能
 * `loading` 值为 `lazy` 时异步加载
 
 ## 添加标题
@@ -71,7 +71,30 @@
 >
 ```
 
-## `<img> vs background vs icon`
+### `<picture>`
+
+```html
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
+```
+
+内部使用 `<source>`标签，`media` 表示条件，`srcset` 表示图片 `url`
+最后添加 `<img>` 标签做替补。
+
+`<picture>` 标签也可以给有兼容性问题的图片添加替补
+
+```html
+<picture>
+  <source type="image/svg+xml" srcset="pyramid.svg">
+  <source type="image/webp" srcset="pyramid.webp">
+  <img src="pyramid.png" alt="regular pyramid built from four equilateral triangles">
+</picture>
+```
+
+## `<img> vs background-image vs icon`
 
 如果图片中包含重要信息，使用 `<img>` 元素。
 如果你的图片仅仅起修饰作用，请使用 `css` 种的背景图。
