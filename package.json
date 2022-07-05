@@ -1,0 +1,24 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ouhsnaux/html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ouhsnaux/html/issues"
+  },
+  "homepage": "https://github.com/ouhsnaux/html#readme",
+  "dependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
