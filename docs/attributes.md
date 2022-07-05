@@ -6,8 +6,10 @@
 * `class` 类，主要用于应用样式
 * `title` 鼠标悬浮时显示的内容
 * `name` 也是元素的标志，但是主要用在表单中
-  * 作为表单提交的key
-  * 将单选按钮分组
+  * 作为表单提交的 `key`
+  * 将 `radio` 和 `checkbox` 分组
+* `contentEditable` 元素可编辑
+* `document.designMode = true` 整个页面可编辑
 
 ## 比较
 
@@ -16,7 +18,7 @@
 `name` 主要用在表单中，有两个作用
 
 * 作为表单提交的key
-* 将单选按钮分组
+* 将 `radio` 和 `checkbox` 分组
 
 其他时候使用 `id`
 

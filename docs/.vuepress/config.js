@@ -8,30 +8,23 @@ module.exports = {
     sidebar: [
       '/',
       '/grammar',
-      '/head',
       {
-        title: '主体',
-        path: '/body',
+        title: '标签',
+        // path: '/tags',
         children: [
-          {
-            title: '标签',
-            path: '/tags',
-            children: [
-              'base',
-              'link',
-              'image',
-              'table',
-              'form',
-              'media',
-              'iframe',
-            ]
-          },
-          'attributes',
-          'events',
+          '/tags/head',
+          '/tags/base',
+          '/tags/link',
+          '/tags/image',
+          '/tags/media',
+          '/tags/table',
+          '/tags/form',
+          '/tags/iframe',
         ]
       },
+      '/attributes',
+      '/events',
       '/standard',
-      '/other',
     ]
   }
 }

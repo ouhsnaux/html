@@ -126,7 +126,7 @@
 `<input type="submit" />` 与 `<button type="submit"></button>` 相比，
 `<input>` 元素内容只能是纯文本，而 `<button>` 内容没有限制。
 
-### 分组
+### `<fieldset>` 分组
 
 使用 `<fieldset>` 对将控件分组，`<legend>` 中显示分组名。
 

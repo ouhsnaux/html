@@ -6,7 +6,7 @@
 <iframe
   src="https://developer.mozilla.org/en-US/docs/Glossary"
   width="100%"
-  height="500"
+  height="500px"
   sandbox
 >
   <p>

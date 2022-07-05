@@ -25,6 +25,6 @@
   * `_blank` 打开新的标签页并跳转
   * `_self` 在当前页跳转
   * `_parent` 如果当前页面被iframe嵌套，在父级页面跳转
-  * `_top` 如果当前页面被iframe嵌套，
+  * `_top` 如果当前页面被iframe嵌套，在最顶级页面跳转
 * `download` 交互方式改为下载文件，并以该属性的值为文件名
 * `rel` 指定值为 `noreferrer noopener`，新页面与本页面隔绝
