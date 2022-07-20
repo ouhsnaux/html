@@ -1,6 +1,6 @@
 module.exports = {
   title: 'HTML',
-  description: 'HTML 语法',
+  description: 'HTML 笔记',
   themeConfig: {
     searchMaxSuggestions: 5,
     nextLinks: true,
