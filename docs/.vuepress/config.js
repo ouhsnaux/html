@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/html/',
   title: 'HTML',
   description: 'HTML 笔记',
   themeConfig: {
