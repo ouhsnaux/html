@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>属性 | HTML</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="description" content="HTML 笔记">
+    
+    <link rel="preload" href="/html/assets/css/0.styles.b58d0218.css" as="style"><link rel="preload" href="/html/assets/js/app.d4a2519b.js" as="script"><link rel="preload" href="/html/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/html/assets/js/8.1a82b8b7.js" as="script"><link rel="prefetch" href="/html/assets/js/10.107d341d.js"><link rel="prefetch" href="/html/assets/js/11.a103aa65.js"><link rel="prefetch" href="/html/assets/js/12.aab170e0.js"><link rel="prefetch" href="/html/assets/js/13.6a933ea4.js"><link rel="prefetch" href="/html/assets/js/14.485786a7.js"><link rel="prefetch" href="/html/assets/js/15.15738e97.js"><link rel="prefetch" href="/html/assets/js/16.513e9061.js"><link rel="prefetch" href="/html/assets/js/17.b7bb1ccc.js"><link rel="prefetch" href="/html/assets/js/18.03064f31.js"><link rel="prefetch" href="/html/assets/js/19.f39a7c09.js"><link rel="prefetch" href="/html/assets/js/3.9c2455d0.js"><link rel="prefetch" href="/html/assets/js/4.26f73e91.js"><link rel="prefetch" href="/html/assets/js/5.5dcec586.js"><link rel="prefetch" href="/html/assets/js/6.f2a96706.js"><link rel="prefetch" href="/html/assets/js/7.076a2fa4.js"><link rel="prefetch" href="/html/assets/js/9.ec65307a.js">
+    <link rel="stylesheet" href="/html/assets/css/0.styles.b58d0218.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/html/" class="home-link router-link-active"><!----> <span class="site-name">HTML</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/html/" aria-current="page" class="sidebar-link">HTML</a></li><li><a href="/html/grammar.html" class="sidebar-link">语法</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>标签</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/html/attributes.html" aria-current="page" class="active sidebar-link">属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html/attributes.html#通用" class="sidebar-link">通用</a></li><li class="sidebar-sub-header"><a href="/html/attributes.html#比较" class="sidebar-link">比较</a></li><li class="sidebar-sub-header"><a href="/html/attributes.html#dataset" class="sidebar-link">dataset</a></li></ul></li><li><a href="/html/events.html" class="sidebar-link">事件</a></li><li><a href="/html/standard.html" class="sidebar-link">规范</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h1> <h2 id="通用"><a href="#通用" class="header-anchor">#</a> 通用</h2> <ul><li><code>id</code> 作为元素的唯一标志，主要用于方便后续查找该元素</li> <li><code>class</code> 类，主要用于应用样式</li> <li><code>title</code> 鼠标悬浮时显示的内容</li> <li><code>name</code> 也是元素的标志，但是主要用在表单中
+<ul><li>作为表单提交的 <code>key</code></li> <li>将 <code>radio</code> 和 <code>checkbox</code> 分组</li></ul></li> <li><code>contentEditable</code> 元素可编辑</li> <li><code>document.designMode = true</code> 整个页面可编辑</li></ul> <h2 id="比较"><a href="#比较" class="header-anchor">#</a> 比较</h2> <h3 id="name-vs-id"><a href="#name-vs-id" class="header-anchor">#</a> <code>name vs id</code></h3> <p><code>name</code> 主要用在表单中，有两个作用</p> <ul><li>作为表单提交的key</li> <li>将 <code>radio</code> 和 <code>checkbox</code> 分组</li></ul> <p>其他时候使用 <code>id</code></p> <h3 id="readonly-vs-disabled"><a href="#readonly-vs-disabled" class="header-anchor">#</a> <code>readonly vs disabled</code></h3> <p><code>readonly</code> 主要用于表单输入组件只读。
+<code>disabled</code> 表示禁用，用途更广，在表单输入组件使用该属性时，效果与 <code>readonly</code> 相同。</p> <h2 id="dataset"><a href="#dataset" class="header-anchor">#</a> dataset</h2> <p><code>data-*</code> 属性，使得 <code>HTML</code> 元素具有绑定数据的能力。</p> <h3 id="html-中使用"><a href="#html-中使用" class="header-anchor">#</a> html 中使用</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span>
+  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>electric-cars<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">data-columns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">data-index-number</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>12314<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">data-parent</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>cars<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+  ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="css-中使用"><a href="#css-中使用" class="header-anchor">#</a> css 中使用</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">article::before</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>data-parent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">article[data-columns='3']</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="js-中使用"><a href="#js-中使用" class="header-anchor">#</a> js 中使用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> article <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#electric-cars'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+article<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>columns <span class="token comment">// 3</span>
+article<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>indexNumber <span class="token comment">// 12314</span>
+article<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>parent <span class="token comment">// cars</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/html/tags/iframe.html" class="prev">
+        iframe
+      </a></span> <span class="next"><a href="/html/events.html">
+        事件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/html/assets/js/app.d4a2519b.js" defer></script><script src="/html/assets/js/2.2defd20b.js" defer></script><script src="/html/assets/js/8.1a82b8b7.js" defer></script>
+  </body>
+</html>

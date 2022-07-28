@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>iframe | HTML</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="description" content="HTML 笔记">
+    
+    <link rel="preload" href="/html/assets/css/0.styles.b58d0218.css" as="style"><link rel="preload" href="/html/assets/js/app.d4a2519b.js" as="script"><link rel="preload" href="/html/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/html/assets/js/15.15738e97.js" as="script"><link rel="prefetch" href="/html/assets/js/10.107d341d.js"><link rel="prefetch" href="/html/assets/js/11.a103aa65.js"><link rel="prefetch" href="/html/assets/js/12.aab170e0.js"><link rel="prefetch" href="/html/assets/js/13.6a933ea4.js"><link rel="prefetch" href="/html/assets/js/14.485786a7.js"><link rel="prefetch" href="/html/assets/js/16.513e9061.js"><link rel="prefetch" href="/html/assets/js/17.b7bb1ccc.js"><link rel="prefetch" href="/html/assets/js/18.03064f31.js"><link rel="prefetch" href="/html/assets/js/19.f39a7c09.js"><link rel="prefetch" href="/html/assets/js/3.9c2455d0.js"><link rel="prefetch" href="/html/assets/js/4.26f73e91.js"><link rel="prefetch" href="/html/assets/js/5.5dcec586.js"><link rel="prefetch" href="/html/assets/js/6.f2a96706.js"><link rel="prefetch" href="/html/assets/js/7.076a2fa4.js"><link rel="prefetch" href="/html/assets/js/8.1a82b8b7.js"><link rel="prefetch" href="/html/assets/js/9.ec65307a.js">
+    <link rel="stylesheet" href="/html/assets/css/0.styles.b58d0218.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/html/" class="home-link router-link-active"><!----> <span class="site-name">HTML</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/html/" aria-current="page" class="sidebar-link">HTML</a></li><li><a href="/html/grammar.html" class="sidebar-link">语法</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>标签</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/html/tags/head.html" class="sidebar-link">head</a></li><li><a href="/html/tags/base.html" class="sidebar-link">基础标签</a></li><li><a href="/html/tags/link.html" class="sidebar-link">链接</a></li><li><a href="/html/tags/image.html" class="sidebar-link">图片</a></li><li><a href="/html/tags/media.html" class="sidebar-link">多媒体</a></li><li><a href="/html/tags/table.html" class="sidebar-link">表格</a></li><li><a href="/html/tags/form.html" class="sidebar-link">表单</a></li><li><a href="/html/tags/iframe.html" aria-current="page" class="active sidebar-link">iframe</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html/tags/iframe.html#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/html/tags/iframe.html#安全" class="sidebar-link">安全</a></li></ul></li></ul></section></li><li><a href="/html/attributes.html" class="sidebar-link">属性</a></li><li><a href="/html/events.html" class="sidebar-link">事件</a></li><li><a href="/html/standard.html" class="sidebar-link">规范</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="iframe"><a href="#iframe" class="header-anchor">#</a> iframe</h1> <p>在自己页面中嵌套使用别人的网站，例子：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span>
+  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://developer.mozilla.org/en-US/docs/Glossary<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>100%<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>500px<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">sandbox</span>
+<span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>/en-US/docs/Glossary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+       Fallback link for browsers that don't support iframes
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>元素内容在浏览器不支持 <code>&lt;iframe&gt;</code> 时显示。</p> <h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <ul><li><code>src</code> 目标网址</li> <li><code>width</code> &amp; <code>height</code> 宽高</li> <li><code>sandbox</code> 建议每次都使用，限制内部页面可执行的操作。</li></ul> <p>为了提高速度，可以在页面渲染完成后，通过 <code>js</code> 设置 <code>iframe</code> 的 <code>src</code>。</p> <h2 id="安全"><a href="#安全" class="header-anchor">#</a> 安全</h2> <ul><li>设置 <code>CSP</code>，</li> <li><code>URL</code> 使用 <code>HTTPS</code>，</li> <li>使用 <code>sandbox</code> 属性</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/html/tags/form.html" class="prev">
+        表单
+      </a></span> <span class="next"><a href="/html/attributes.html">
+        属性
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/html/assets/js/app.d4a2519b.js" defer></script><script src="/html/assets/js/2.2defd20b.js" defer></script><script src="/html/assets/js/15.15738e97.js" defer></script>
+  </body>
+</html>
