@@ -2,6 +2,9 @@ module.exports = {
   base: '/html/',
   title: 'HTML',
   description: 'HTML 笔记',
+  head: [
+    ['link', { rel: "shortcut icon", href: "./favicon.ico"}],
+  ],
   themeConfig: {
     searchMaxSuggestions: 5,
     nextLinks: true,
